@@ -1,0 +1,11 @@
+<nav>
+    <img src="#" alt="logoIUT">
+    <div class="navDroite">
+        <a href="#">Accueil</a>
+        <a href="#" id="important">Poursuites d'études</a>
+        <label class="switch">
+            <input type="checkbox" />
+            <span></span>
+        </label>
+    </div>
+</nav>
