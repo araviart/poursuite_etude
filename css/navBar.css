@@ -159,3 +159,33 @@ main{
   border-radius: 8px;
   box-shadow: 2px 3px 10px grey;
 }
+
+footer{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  min-width: 80%;
+  margin-top: 8em;
+}
+
+footer ul li{
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #2C3A4B;
+}
+
+footer .fondunoir{
+  width: 1000px;
+  height: 200px;
+  /* background-color: black; */ /* gradient a mettre*/
+  filter: blur(1000px);
+}
+
