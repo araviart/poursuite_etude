@@ -6,7 +6,8 @@
 }
 
 h1{
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
 }
 
 body{
@@ -104,28 +105,57 @@ nav img{
 
 main h1{
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1.5em;
+  position: absolute;
 }
 
 main .secondtitle{
   display: block;
-  margin-left: 2em;
+  margin-left: 1em;
   margin-top: 0.3em;
   font-weight: 700;
+  color: #23262F;
 }
 
 main .secondtitle p{
   display: inline;
   margin-left: 2em;
-  padding: 10px;
-  background-color: white;
+  background-color: #F4F6F9;
+  color: #00B4D8;
+  padding: 0px 10px;
   border-radius: 12px;
-  color: #00B4D8
+
+}
+
+main{
+  display: flex;
+  justify-content: center;
 }
 
 .divbleu{
+  margin-top: 10em;
+  border-radius: 15px;
+  position: relative;
   width: 1166px;
   height: 535px;
+  background-color: #8ECAE6;
 }
 
+.divbleu h1{
+  position: absolute;
+  top: -4em;
+  left: 0;
+}
 
+.decouvrir{
+  padding: 14px 20px;
+  background-color: #FFFF;
+  text-decoration: none;
+  color: #2C3A4B;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 46%;
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px grey;
+}
