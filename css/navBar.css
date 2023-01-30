@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 *{
   margin: 0;
   padding: 0;
   list-style: 0;
+}
+
+h1{
+  font-family: 'DM Sans', sans-serif;
 }
 
 body{
@@ -97,12 +102,30 @@ nav img{
 	left: 2em;
 }
 
-header h1{
+main h1{
   text-align: center;
   margin-top: 2em;
 }
 
-header span{
+main .secondtitle{
   display: block;
-  margin-left: 1em;
+  margin-left: 2em;
+  margin-top: 0.3em;
+  font-weight: 700;
 }
+
+main .secondtitle p{
+  display: inline;
+  margin-left: 2em;
+  padding: 10px;
+  background-color: white;
+  border-radius: 12px;
+  color: #00B4D8
+}
+
+.divbleu{
+  width: 1166px;
+  height: 535px;
+}
+
+
