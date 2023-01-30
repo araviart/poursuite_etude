@@ -4,6 +4,7 @@
 
 *{
     background-color: #F4F6F9;
+    font-family: DM Sans;
 }
 
 
@@ -31,6 +32,7 @@ nav a{
 nav img{
     flex-grow: 1;
     margin: 1em;
+    width: 2px;
 }
 
 .navDroite{
@@ -116,14 +118,16 @@ header span{
     border-radius: 18px;
 }
 
+.gauche{
+  margin-left: 5em;
+}
 
-
-section{
+main > section{
   display: flex;
   margin: 10em;
 }
 
-.etu1{
+.petitDiv{
   font-size: 12px;
   flex-grow: 0;
   flex-basis: 15vw;
@@ -132,28 +136,66 @@ section{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.etu1 img{
+.petitDiv img{
   width: 15vw;
 }
 
-.etu1 div{
+.petitDiv div{
   margin: 2em;
 }
 
-.etu1 *{
+.petitDiv *{
   background-color: white;
 }
 
-.qEtu1{
-  font-size: 16px;
+.grandDiv{
   flex-basis: 60vw;
-  margin-left: 5em;
-  padding: 2em;
+  padding: 1em;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.qEtu1 *{
+.grandDiv ul{
+  list-style: none;
+}
+
+.grandDiv h4{
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.grandDiv *{
   background-color: white;
+}
+
+#milieu{
+  border-top: #E6E6E6 solid 2px;
+  border-bottom: #E6E6E6 solid 2px;
+}
+
+.presEtu{
+  display: flex;
+  margin: 1em 3em 3em;
+  padding-bottom: 1em;
+  align-items: center;
+  border-bottom: #E6E6E6 solid 2px;
+}
+
+.presEtu img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#Qmetier{
+  padding: 2em;
+}
+
+#Qmetier h4{
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-bottom: #E6E6E6 solid 2px;
 }
