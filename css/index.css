@@ -16,7 +16,7 @@ h1{
 }
 
 body{
-  background-color: #F4F6F9;
+  background-color: var(--main-bg-couleur);
   display: flex;
   flex-direction: column;
 }
@@ -213,6 +213,6 @@ footer .fondunoir{
 }
 
 
-@media screen and (min-width: ) and (orientation: landscape) {
+/* @media screen and (min-width: ) and (orientation: landscape) {
 
-}
+} */
