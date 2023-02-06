@@ -46,8 +46,6 @@ nav img{
 
 
 
-
-
 /* Le switch */
 .switch {
   display: inline-block;
@@ -132,6 +130,7 @@ main > section{
 }
 
 .petitDiv img{
+  min-width: 100%;
   width: 15vw;
   border-radius: 12px;
 }
@@ -213,6 +212,25 @@ h2 span{
   border-radius: 18px;
 }
 
+.graphique{
+  display: block;
+}
+
+.graph{
+  text-align: center;
+}
+
+.titreGraphique{
+  display: flex;
+  align-items: center;
+}
+
+.barre{
+  margin-left: 100px;
+  width: 75%;
+  height: 36px;
+  background: linear-gradient(270deg, #D9D9D9 0%, #8ECAE6 99.99%, #8ECAE6 100%);
+}
 
 footer{
   text-align: right;
@@ -226,8 +244,6 @@ footer span{
   padding: 0.2em;
   border-radius: 8px;
 }
-
-
 
 .cercle{
   position: absolute;
@@ -251,8 +267,91 @@ footer span{
   border-radius: 50%;
 }
 
-.barre{
-  width: 848px;
-  height: 36px;
-  background: linear-gradient(270deg, #D9D9D9 0%, #8ECAE6 99.99%, #8ECAE6 100%);
+@media only screen and (max-width: 850px){
+  .navDroite{
+    flex-basis: 5vw;
+  }
+  .navDroite a{
+    margin: 0 1em 0;
+  }
+
+  nav{
+    font-size: 0.75em;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+
+  header span{
+    padding: 0.1em;
+  }
+
+  main > section{
+    margin: 5em 4em;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .gauche{
+    margin-left: 0;
+  }
+
+  .petitDiv{
+    font-size: 12px;
+    flex-grow: 1;
+    margin: 2em 0;
+  }
+
+  .grandDiv{
+    font-size: 0.8em;
+    padding: 0;
+    flex-grow: 1;
+  }
+
+  .grandDiv h4{
+    font-size: 1em;
+  }
+
+  .presEtu{
+    font-size: 12px;
+    margin: 0 1em 1em;
+    padding-bottom: 0;
+  }
+
+  .presEtu img{
+    margin-right: 1em;
+  }
+
+  #Qmetier h4{
+    padding-bottom: 0.5em;
+    font-size: 1.3em;
+  }
+
+  h2{
+    font-family: Poppins;
+    font-size: 20px;
+  }
+
+  .barre{
+    margin-left: 10px;
+  }
+
+  footer{
+    font-size: 10px;
+  }
+  
+  .cercle{
+    top: calc(0% - 20px);
+    left: calc(100% - 30px);
+    width: 56px;
+    height: 56px;
+  }
+
+  .cercle2{
+    top: calc(0% - 38px);
+    left: calc(0% - 40px);
+    width: 96px;
+    height: 96px;
+  }
 }
