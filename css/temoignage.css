@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@700&display=swap');
 
-*{
-    background-color: #F4F6F9;
+body{
+  background-color: #F4F6F9;
 }
-
 
 
 
@@ -123,6 +122,7 @@ main > section{
 }
 
 .petitDiv{
+  position: relative;
   font-size: 12px;
   flex-grow: 0;
   flex-basis: 13.5vw;
@@ -194,6 +194,7 @@ h3{
 }
 
 #Qmetier h4{
+  z-index: 2;
   padding-bottom: 1em;
   font-size: 1.5em;
   font-weight: 700;
@@ -224,4 +225,34 @@ footer span{
   background-color: white;
   padding: 0.2em;
   border-radius: 8px;
+}
+
+
+
+.cercle{
+  position: absolute;
+  z-index: -1;
+  top: calc(0% - 50px);
+  left: calc(100% - 50px);
+  width: 112px;
+  height: 112px;
+  background: linear-gradient(180deg, #8ECAE6 0%, rgba(142, 202, 230, 0.28) 100%);
+  border-radius: 50%;
+}
+
+.cercle2{
+  position: absolute;
+  z-index: -1;
+  top: calc(0% - 70px);
+  left: calc(0% - 80px);
+  width: 192px;
+  height: 192px;
+  background: linear-gradient(180deg, #8ECAE6 0%, rgba(142, 202, 230, 0.28) 100%);
+  border-radius: 50%;
+}
+
+.barre{
+  width: 848px;
+  height: 36px;
+  background: linear-gradient(270deg, #D9D9D9 0%, #8ECAE6 99.99%, #8ECAE6 100%);
 }
