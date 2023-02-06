@@ -40,7 +40,6 @@ nav a{
 header nav img{
   display: inline;
   width: auto;
-  height: 4s0px;
 }
 
 #important{
@@ -127,7 +126,7 @@ main{
 main h1{
   text-align: center;
   margin-top: 2.2em;
-  position: absolute;
+
 }
 
 main .secondtitle{
@@ -149,6 +148,7 @@ main .secondtitle p{
 main{
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .divbleu{
@@ -158,6 +158,7 @@ main{
   width: 1166px;
   height: 535px;
   background-color: #8ECAE6;
+  align-items: center;
 }
 
 .divbleu h1{
@@ -174,14 +175,15 @@ main{
   font-family: 'Poppins', sans-serif;
   position: absolute;
   bottom: 20px;
-  left: 46%;
+  left: 45%;
   border-radius: 8px;
   box-shadow: 2px 3px 10px grey;
 }
 
 footer{
-  align-items: flex-end;
-  margin-bottom: 3%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
 }
 
 footer ul{
@@ -202,17 +204,39 @@ footer ul li a{
   color: #777E90;
 }
 
-footer .fondunoir{
-  width: 100%;
-  height: 150px;
-  bottom: 0;
-  display: inline;
-  position: absolute;
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 100%);
+
+@media screen and (max-width: 1166px ) and (max-width: 1440px){
+  .divbleu{
+    width: 90%;
+  }
+  nav{
+    align-items: center;
+    font-size: 12px;
+  }
+
+  header{
+    margin: 10px 10px;
+  }
+  nav img{
+    width: 5px;
+    height: 25px;
+  }.navDroite a{
+  margin: 0 1em 0;
+  }
 }
 
-
-/* @media screen and (min-width: ) and (orientation: landscape) {
-
-} */
+@media screen and (max-width: 550px) {
+  .divbleu h1{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: -6em;
+    font-size: 32px;
+    
+  }
+  .divbleu h1 span p{
+    background-color: #FFFF;
+    padding: 12px;
+  }
+  
+}
