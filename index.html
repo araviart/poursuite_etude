@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil poursuite d'étude </title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/main_style.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil poursuite d'étude</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main_style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <img src="assets/logoiutnewgen.png" alt="logoIUT">
-            <div class="navDroite">
-                <a href="#">Accueil</a>
-                <a href="#" id="important">Poursuites d'études</a>
-                <label class="switch">
-                    <input type="checkbox" />
-                    <span></span>
-                </label>
-            </div>
-        </nav>
+      <nav>
+        <img src="assets/logoiutnewgen.png" alt="logoIUT" />
+        <div class="navDroite">
+          <a href="#">Accueil</a>
+          <a href="#" id="important">Poursuites d'études</a>
+          <label class="switch">
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </div>
+      </nav>
+      <h1>Les poursuites d'études en <span>BUT INFORMATIQUE</span></h1>
     </header>
     <main>
-        <div class="divbleu">
-            <h1>Le BUT informatique<span class="secondtitle">
-                    <p>ET APRES !</p>
-                </span></h1>
-            <a href="#" class="decouvrir">Découvrir</a>
-        </div>
-    </main>
-    <footer>
+      <section id="gauche">
+        <img
+          id="etudiantfemme"
+          src="./assets/etudiant2.png"
+          alt="etudiantfemmebutinfo"
+        />
+        <img
+          id="etudianthomme"
+          src="./assets/etudiant1.png"
+          alt="etudianthommebutinfo"
+        />
+      </section>
+      <section id="droite">
         <ul>
-            <li><a href="#">Site de l'IUT</a></li>
-            <li><a href="#">Réalisé par git push</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#">école d'ingénieur ?</a><div class ="cercle"><span class ="arrow"></li>
+          <li><a href="#">master ?</a><div class ="cercle"><span class ="arrow"></span></div></li>
+          <li><a href="#">quels exigences ?</a><div class ="cercle"><span class ="arrow"></span></div></li>
+          <li><a href="#">quel établissement ?</a><div class ="cercle"><span class ="arrow"></span></div></li>
+          <li><a href="#">quand postuler ?</a><div class ="cercle"><span class ="arrow"></span></div></li>
         </ul>
-    </nav>
-    </footer>
-</body>
-
+        <a id="boutton" href="">Tout savoir sur les poursuites d'études</a>
+      </section>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">Site de l'IUT</a></li>
+          <li><a href="#">Réalisé par</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
 </html>
