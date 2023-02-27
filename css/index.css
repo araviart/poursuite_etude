@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+  height: 100vh;
+  background-color: var(--main-bg-couleur);
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: "DM Sans";
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  font-family: DM Sans;
+  margin: 22px 22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #777e90;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+}
+
+header nav img {
+  display: inline;
+  width: auto;
+}
+/* animation simple boutton avec pseudo élement*/
+#important {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c3a4b;
+  background-color: white;
+  overflow: hidden;
+  width: 180px;
+  height: 30px;
+  border: solid 3px #8ecae6;
+  border-radius: 8px;
+  z-index: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+#important::before {
+  content: "";
+  position: absolute;
+  right: 180px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bordure-boutton-couleur);
+  border-radius: 0% 50% 50% 0%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+#important:hover::before {
+  right: 0px;
+  border-radius: 0;
+}
+
+#boutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c3a4b;
+  background-color: white;
+  overflow: hidden;
+  width: 300px;
+  font-family: "DM Sans";
+  height: 30px;
+  border: solid 3px var(--bordure-boutton-couleur);
+  border-radius: 8px;
+  z-index: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin-top: 7%;
+}
+
+#boutton::before {
+  content: "";
+  position: absolute;
+  right: 300px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bordure-boutton-couleur);
+  border-radius: 0% 50% 50% 0%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+#boutton:hover::before {
+  right: 0px;
+  border-radius: 0;
+}
+
+nav img {
+  width: 30px;
+  height: auto;
+}
+
+.navDroite {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.navDroite a {
+  margin: 0 3em 0;
+}
+
+/* Le switch */
+.switch {
+  display: inline-block;
+  position: relative;
+  min-width: 4.2em;
+  min-height: 2.2em;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.switch input {
+  position: absolute;
+  top: -1.8em;
+  left: -1.8em;
+  width: 0;
+  height: 0;
+}
+
+.switch input + span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: gray;
+  border-radius: 1.25em;
+}
+
+.switch input:checked + span {
+  background: #346abf;
+}
+
+.switch input + span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0.25em;
+  width: 2em;
+  height: 2em;
+  background: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+
+.switch input:checked + span:before {
+  left: 2em;
+}
+
+/* titre */
+
+h1 {
+  margin: 10px;
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  color: var(--noir-titre);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 span {
+  color: var(--bleu-titre-couleur);
+}
+
+#cercle1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  left: 20%;
+  border-radius: 50%;
+  background: var(--gradient);
+  z-index: -1;
+}
+
+#gauche {
+  flex-basis: 55%;
+  position: relative;
+}
+
+#etudiantfemme {
+  position: absolute;
+  max-width: 40em;
+  left: 22%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#etudianthomme {
+  position: absolute;
+  max-width: 50em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#droite {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#droite ul li {
+  display: flex;
+  align-items: center;
+}
+
+#droite ul a {
+  color: var(--texte-nav-couleur);
+  font-size: 40px;
+  font-family: DM Sans;
+}
+
+.cercle {
+  width: 40px;
+  height: 40px;
+  background-color: #d9d9d9;
+  margin-left: 15px;
+  border-radius: 50%;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 25.78%; /*(largeur=hauteur de la flèche/ largeur=hauteur du cercle)/2*/
+  left: 25.78%;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  padding: 5px;
+  display: inline;
+  transform: rotate(45 deg);
+}
+
+footer ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+footer ul a {
+  color: var(--texte-nav-couleur);
+  font-family: "DM Sans";
+  font-size: 14px;
+}
+
+/* gestion sous menu */
+.menu {
+  position: relative;
+}
+/* Style du sous-menu */
+.sousmenu {
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  border: 1px solid var(--bordure-boutton-couleur);
+  border-radius: 12px;
+  padding: 10px;
+  width: 40em;
+  height: calc(10em);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Style de l'élément parent du sous-menu */
+.menu:hover .sousmenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bouttonli {
+  right: 5%;
+  position: absolute;
+  display: inline-block;
+  font-size: 38px;
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--bleu-titre-couleur);
+}
+
+.bouttonli:hover {
+  transform: scale(1.1);
+}
+
+#droite li:hover .cercle,
+#droite li:hover .arrow {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animation à la sortie du survol */
+#droite li:not(:hover) .cercle,
+#droite li:not(:hover) .arrow {
+  opacity: 1;
+  transform: translateX(0) rotate(-23deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.titresousmenu {
+  margin-bottom: 3%;
+  font-size: 20px;
+  font-family: "DM Sans";
+  color: var(--bleu-titre-couleur);
+}
+
+#droite ul li:nth-child(4) .sousmenu {
+  display: flex;
+  font-family: "DM Sans";
+}
+
+/* Style de l'élément parent du sous-menu */
+.menu:hover .sousmenuspe {
+  visibility: visible;
+  opacity: 1;
+}
+
+#titresousmenumaster + .bouttonli {
+  bottom: 15px;
+}
+
+body {
+  animation: transitionOK 0.5s;
+}
+
+input[type="checkbox"]:not(:checked) ~ body {
+    background-color: #f1f1f1;
+    color: #2d2d2d;
+  }
+
+@keyframes transitionOK {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body.dark{
+    background-color: #333;
+    color: #fff;
+  }
