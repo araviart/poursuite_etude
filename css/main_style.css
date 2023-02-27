@@ -11,5 +11,6 @@
     --bleu-titre-couleur: #00B4D8;
     --texte-nav-couleur: #777E90;
     --noir-titre: #2C3A4B;
+    --gradient: linear-gradient(180deg, #8ECAE6 0%, rgba(142, 202, 230, 0.28) 100%);
 }
 
