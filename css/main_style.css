@@ -1,8 +1,3 @@
-/* # background color : F4F6F9
-# bleu soft ( bord boutton ) : 8ECAE6
-# couleur texte important (noir) : 2C3A4B
-# bleu plus foncé titre couleur : 00B4D8
-# couleur texte nav : 777E90 */
 
 :root{
     --main-bg-couleur: #F4F6F9;
@@ -12,8 +7,4 @@
     --texte-nav-couleur: #777E90;
     --noir-titre: #2C3A4B;
     --gradient: linear-gradient(180deg, #8ECAE6 0%, rgba(142, 202, 230, 0.28) 100%);
-    /* dark mode */
-    --background-color: #222;
-  --text-color: #fff;
 }
-
