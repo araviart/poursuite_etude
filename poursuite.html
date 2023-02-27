@@ -23,13 +23,12 @@
             </div>
         </nav>
         <div class="titre">
-            <h1 id="part1">LES POSSIBILITES...<span id="cercle"></span></h1>
-            <h1 id="part2">PREPARE TON <span>AVENIR !</span></h1>
+            <h1 id="part1">LES POSSIBILITÉS...<span id="infe"></span><span id ="second">PRÉPARE TON<span id="avenir"> AVENIR !</span></span><span id="cercle"></span></h1>
         </div>
         <nav class="navInterne">
             <ul>
-                <li><a href="#">2 VOIES PRINCIPALES</a></li>
-                <li><a href="#">VOIR LE GRAPHIQUE</a></li>
+                <li><a href="#imageIngenieur">2 VOIES PRINCIPALES</a></li>
+                <li><a href="#graphique">VOIR LE GRAPHIQUE</a></li>
             </ul>
         </nav>
     </header>
@@ -69,30 +68,30 @@
         </div>
         <div>
             <section id="ecoleinge">
-                <h2>ECOLE D'INGENIEUR</h2>
+                <h2>ÉCOLE D'INGÉNIEURS</h2>
                 <ul class="bulle">
-                    <li><img class="fleche1" alt="imageflèche" src="Vector_1.svg">
+                    <li><img class="fleche1" alt="imageflèche" src="assets/Vector_1.svg">
                         <h3>Pour qui ?</h3>
                     </li>
-                    <li class="réponse"><img class="flechedroite1" alt="imageflèche" src="Vector_2.svg">
+                    <li class="réponse"><img class="flechedroite1" alt="imageflèche" src="assets/Vector_2.svg" id="exigence">
                         <p>Si vous disposez de votre BUT informatique ou alors que vous êtes un excellent étudiant en
                             deuxième année de BUT vous pouvez concourir afin d’intégrer une école d’ingénieur. Il faut
                             garder en tête que le niveau en maths sera beaucoup plus élevé, il vous faut donc de bons
                             résultats en mathématiques.</p>
                     </li>
-                    <li><img class="fleche1" alt="imageflèche" src="Vector_1.svg">
+                    <li><img class="fleche1" alt="imageflèche" src="assets/Vector_1.svg">
                         <h3>Pourquoi ?</h3>
                     </li>
-                    <li class="réponse"><img class="flechedroite2" alt="imageflèche" src="Vector_2.svg">
+                    <li class="réponse"><img class="flechedroite2" alt="imageflèche" src="assets/Vector_2.svg">
                         <p>L’acquisition d’un diplôme d’ingénieur permet d’avoir plus de responsabilités, diriger des
                             équipes et travailler à l’étranger en plus de la rémunération augmenté. En effet vous aurez
-                            un niveau d’étude suppérieur, un bac +5 contre un bac +3 à la fin du BUT.</p>
+                            un niveau d’étude supérieur, un bac +5 contre un bac +3 à la fin du BUT.</p>
                     </li>
-                    <li><img class="fleche1" alt="imageflèche" src="Vector_1.svg">
+                    <li><img class="fleche1" alt="imageflèche" src="assets/Vector_1.svg">
                         <h3>Lesquelles ?</h3>
                     </li>
-                    <li class="réponse"><img class="flechedroite3" alt="imageflèche" src="Vector_2.svg">
-                        <ul class="sousliste">
+                    <li class="réponse"><img class="flechedroite3" alt="imageflèche" src="assets/Vector_2.svg">
+                        <ul class="sousliste" id="etablissement">
                             <li>
                                 <p>Nous pouvons noter quelques écoles, tel que :</p>
                             </li>
@@ -110,12 +109,24 @@
                 </ul>
             </section>
             <section>
-                <h2>Les différents parcours en 3 graphiques</h2>
-                <div><img class="graphiques" alt="graphiques" src="fds ">
-                    <img class="graphiques" alt="graphiques" src="fds">
-                    <img class="graphiques" alt="graphiques" src="fds">
-                </div>
+                <h2>Les différents parcours en graphique</h2>
+                <div id="graphique"><img class="graphiques" alt="graphiques" src="assets/graphique.png"></div>
             </section>
         </div>
     </main>
 </body>
+<script>
+    const toggleSwitch = document.querySelector('input[type="checkbox"]');
+    const body = document.querySelector('body');
+
+    function switchTheme(event) {
+      if (event.target.checked) {
+        body.classList.add('dark-mode');
+      } else {
+        body.classList.remove('dark-mode');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+</html>

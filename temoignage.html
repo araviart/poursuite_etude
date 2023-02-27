@@ -98,4 +98,18 @@
         <p>poursuite d'études <span>détails</span> <span class="fleche"><a href="poursuite.html">→</a></span></p>
     </footer>
 </body>
+<script>
+    const toggleSwitch = document.querySelector('input[type="checkbox"]');
+    const body = document.querySelector('body');
+
+    function switchTheme(event) {
+      if (event.target.checked) {
+        body.classList.add('dark-mode');
+      } else {
+        body.classList.remove('dark-mode');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
 </html>

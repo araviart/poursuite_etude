@@ -8,3 +8,31 @@
     --noir-titre: #2C3A4B;
     --gradient: linear-gradient(180deg, #8ECAE6 0%, rgba(142, 202, 230, 0.28) 100%);
 }
+
+.dark-mode {
+  --main-bg-couleur: #333333;
+  --bordure-boutton-couleur: #4C4C4C;
+  --important-texte-couleur: #FFFFFF;
+  --bleu-titre-couleur: #00B4D8;
+  --texte-nav-couleur: #f0f0f0;
+  --noir-titre: #FFFFFF;
+  --gradient: linear-gradient(180deg, #d1d1d1 0%, rgba(76, 76, 76, 0.28) 100%);
+  }
+
+.dark-mode img{
+  filter: grayscale(1);
+}
+
+@keyframes changement-couleur {
+  0% {
+    color: #333333; /* La couleur du texte au départ */
+  }
+  100% {
+    color: #F4F6F9; /* La couleur du texte au milieu de l'animation */
+  }
+}
+
+.dark-mode nav a:hover, #boutton:hover{
+  animation: changement-couleur 0.7s ease-in-out forwards;
+}
+
