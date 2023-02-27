@@ -235,8 +235,9 @@ h1 span {
 }
 
 #etudianthomme {
+  display: inline;
   position: absolute;
-  max-width: 50em;
+  max-width: 40em;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -376,18 +377,3 @@ body {
   animation: transitionOK 0.5s;
 }
 
-h1 {
-  animation: animationOui 1s ease-in-out forwards;
-  opacity: 0;
-}
-
-@keyframes animationOui {
-  from {
-    transform: translateX(-5%);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}

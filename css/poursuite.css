@@ -120,9 +120,9 @@ div ul li{
     padding: 30px;
     background: var(--gradient);
     position: absolute;
-    right: 63%;
+    right: 57%;
     z-index: -1;
-    top: 10px;
+    top: -10px;
 }
 
 section{
@@ -257,3 +257,12 @@ li:nth-child(6){
     padding: 12px;
 }
 
+.lueur{
+    width: 120px;
+    height: 70px;
+    background: var(--gradient);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(50px);
+}

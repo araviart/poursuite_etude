@@ -20,9 +20,6 @@ header span {
   border-radius: 18px;
 }
 
-.gauche {
-  margin-left: 5em;
-}
 
 main>section {
   display: flex;
@@ -133,7 +130,6 @@ h2 span {
 
 .graph img{
   border-radius: 18px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .titreGraphique {
@@ -142,10 +138,10 @@ h2 span {
 }
 
 .barre {
-  margin-left: 100px;
+  margin-left: 40px;
   width: 75%;
   height: 36px;
-  background: var(--gradient-bar);
+  background: var(--gradient);
 }
 
 footer {
@@ -167,6 +163,7 @@ footer span {
   width: 0.2em;
   height: 0.2em;
   border-radius: 50%;
+  scale: 1;
 }
 
 .fleche a {
