@@ -288,6 +288,8 @@ footer ul {
   justify-content: space-around;
   align-content: center;
   margin-bottom: 3%;
+  height: 100px;
+  align-items: flex-end;
 }
 
 footer ul a {

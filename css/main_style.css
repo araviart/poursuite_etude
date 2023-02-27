@@ -6,6 +6,7 @@
     --bleu-titre-couleur: #00B4D8;
     --texte-nav-couleur: #777E90;
     --noir-titre: #2C3A4B;
+    --separateur: #e6e6e6;
     --gradient: linear-gradient(180deg, #8ECAE6 0%, rgba(142, 202, 230, 0.28) 100%);
 }
 
@@ -16,6 +17,7 @@
   --bleu-titre-couleur: #00B4D8;
   --texte-nav-couleur: #f0f0f0;
   --noir-titre: #FFFFFF;
+  --separateur: #c7c7c7;
   --gradient: linear-gradient(180deg, #d1d1d1 0%, rgba(76, 76, 76, 0.28) 100%);
   }
 
@@ -36,8 +38,8 @@
   animation: changement-couleur 0.7s ease-in-out forwards;
 }
 
-.dark-mode nav a, #boutton{
-  color: #333333;
+.dark-mode nav a,.dark-mode #boutton{
+  color: #c7c7c7;
 }
 
 h1 {
